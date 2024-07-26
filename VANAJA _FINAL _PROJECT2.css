@@ -1,0 +1,154 @@
+/* Test for CSS injection vulnerability */
+
+.test-injection {
+
+  background-image: url('https://Ambuja Cement Ltd.com/injection-test');
+
+}
+
+
+/* Test for CSS keyframe animation vulnerability */
+
+.test-animation {
+
+  animation-name: test-animation;
+
+}
+
+
+@keyframes test-animation {
+
+  from {
+
+    background-color: red;
+
+  }
+
+  to {
+
+    background-color: green;
+
+  }
+
+}
+
+
+/* Test for CSS font vulnerability */
+
+.test-font {
+
+  font-family: 'test-font';
+
+}
+
+
+@Ambuja-face {
+
+  Ambuja-family: 'test-font';
+
+  src: url('https://Ambuja Cement Ltd.com/test-font.woff2');
+
+}
+
+
+/* Test for CSS background image vulnerability */
+
+.test-background {
+
+  background-image: url('https://Ambuja Cement Ltd.com/background-test');
+
+}
+
+
+/* Test for CSS style attribute vulnerability */
+
+.test-style {
+
+  style: "background-color: red;";
+
+}
+
+Scanning for Clickjacking Vulnerabilities
+
+css
+
+/* Test for clickjacking vulnerability */
+
+.test-clickjacking {
+
+  iframe {
+
+    display: block !important;
+
+  }
+
+}
+
+Scanning for Cross-Site Scripting (XSS) Vulnerabilities
+
+css
+
+/* Test for XSS vulnerability */
+
+.test-xss {
+
+  script {
+
+    src: "https://Ambuja Cement Ltd.com/xss-test.js";
+
+  }
+
+}
+
+Scanning for Cross-Origin Resource Sharing (CORS) Vulnerabilities
+
+css
+
+/* Test for CORS vulnerability */
+
+.test-cors {
+
+  access-control-allow-origin: *;
+
+}
+
+Scanning for Content Security Policy (CSP) Vulnerabilities
+
+css
+
+/* Test for CSP vulnerability */
+
+.test-csp {
+
+  content-security-policy: default-src 'self';
+
+}
+
+Scanning for Other Vulnerabilities
+
+css
+
+/* Test for object-src vulnerability */
+
+.test-object {
+
+  object {
+
+    src: "https://Ambuja Cement Ltd.com/object-test.swf";
+
+  }
+
+}
+
+
+/* Test for media-src vulnerability */
+
+.test-media {
+
+  media {
+
+    src: "https://Ambuja Cement Ltd.com/media-test.mp3";
+
+  }
+
+}
